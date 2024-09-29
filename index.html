@@ -4,40 +4,55 @@
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>婚礼祝福</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">  
     <style>  
-        body {  
+        body, html {  
+            margin: 0;  
+            padding: 0;  
+            height: 100%;  
             font-family: Arial, sans-serif;  
-            text-align: center;  
-            padding: 20px;  
-            background-image: url('https://via.placeholder.com/1920x1080?text=Wedding+Background'); /* 替换为婚礼背景图片URL */  
+            background-image: url('https://bpic.588ku.com/back_pic/19/04/18/97f1e1257ff4745666333a5233ecb600.jpg'); /* 替换为实际背景图片URL */  
             background-size: cover;  
             background-position: center;  
-            color: #fff; /* 根据背景图片调整文字颜色 */  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
         }  
+  
         .container {  
-            background-color: rgba(255, 215, 0, 0.8); /* 淡黄色的半透明背景，增加喜庆感 */  
-            padding: 20px;  
-            border-radius: 10px;  
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果，增加立体感 */  
-            max-width: 600px; /* 限制容器宽度，使内容居中 */  
-            margin: 50px auto; /* 上下外边距，左右自动居中 */  
+            text-align: center;  
+            color: #ff0000; /* 初始颜色为红色，喜庆元素之一 */  
+            animation: blink 1.5s infinite; /* 应用闪烁动画 */  
         }  
+  
+        @keyframes blink {  
+            0%, 100% { color: #ff0000; } /* 红色和金色交替，开始和结束为红色 */  
+            50% { color: #ffd700; } /* 中间为金色，增加喜庆感 */  
+        }  
+  
         .cartoon-img {  
-            width: 300px;  
+            width: 500px;  
             height: auto;  
             margin: 20px auto;  
             display: block;  
-            border-radius: 10px; /* 图片圆角 */  
+            border-radius: 10px; 
         }  
+  
+        .names, .wish {  
+            font-size: 36px;  
+            line-height: 1.2;  
+            font-family: 'Great Vibes', cursive;  
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+            animation: blink 1.5s infinite; /* 同样应用到.names和.wish上 */  
+        }  
+  
+        /* 可以为.names和.wish添加不同的动画延迟，以创造更丰富的效果 */  
         .names {  
-            font-size: 28px;  
-            color: #ff0000; /* 红色文字，增加喜庆感 */  
-            font-weight: bold;  
+            animation-delay: 0.2s;  
         }  
+  
         .wish {  
-            font-size: 20px;  
-            color: #ff6600; /* 橙色文字，与背景协调 */ 
-            margin-top: 10px;  
+            animation-delay: 0.4s;  
         }  
     </style>  
 </head>  
@@ -45,16 +60,16 @@
   
 <div class="container">  
     <!-- 卡通人物图片，请替换为您的图片URL -->  
-    <img src="https://via.placeholder.com/300x300?text=Cartoon+Couple" alt="卡通情侣" class="cartoon-img">  
-  
+    <img src="https://wimg.588ku.com/gif/20/09/08/05f36aa9f4da00d96826d10cbe5e09a3.gif" alt="卡通情侣" class="cartoon-img">  
+    
     <!-- 新人名字 -->  
     <div class="names">  
         恭祝 xx 先生 与 xx 女士  
     </div>  
-  
+    
     <!-- 祝福语 -->  
     <div class="wish">  
-        愿你们的爱如星辰般璀璨，岁月静好，携手共度每一个美好瞬间。祝福你们幸福美满，白头偕老！  
+        特别的日子，特别的祝福；祝你们永结同心、幸福美满，携手共度每一个美好瞬间。  
     </div>  
 </div>  
   
